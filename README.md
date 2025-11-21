@@ -20,8 +20,8 @@ link: https://www.kaggle.com/datasets/anshankul/ibm-amlsim-example-dataset
 ```bash
 aml_aml_unsupervised/
 ├─ data/
-│  ├─ raw/
-│  └─ processed/
+│  ├─ raw/accounts.csv, alerts.csv, transactions.csv (data obtenida de kaggle)
+│  └─ processed/transactions_with_scores.csv (entrega modelo)
 ├─ src/
 │  ├─ config.py
 │  ├─ data_loader.py
@@ -35,5 +35,6 @@ aml_aml_unsupervised/
 ├─ config.yaml
 ├─ requirements.txt
 └─ README.md
+
 
 
