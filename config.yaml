@@ -1,0 +1,22 @@
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  transactions_file: "transactions.csv"
+  accounts_file: "accounts.csv"
+  alerts_file: "alerts.csv"
+
+columns:
+  timestamp: "TIMESTAMP"              # columna de tiempo (0–199 en tu simulación)
+  amount: "TX_AMOUNT"                 # monto de la transacción
+  sender_account: "SENDER_ACCOUNT_ID"
+  receiver_account: "RECEIVER_ACCOUNT_ID"
+  label: "IS_FRAUD"                   # fraude a nivel transacción
+  account_id: "ACCOUNT_ID"            # id en accounts.csv
+  alert_id: "ALERT_ID"                # id de alerta en transactions / alerts
+
+model:
+  contamination: 0.01                 # ~1% de outliers esperados
+  ensemble_threshold: 0.99            # top 1% del score como anómalo
+
+feature_engineering:
+  time_windows_days: [7, 30]          # reservado si luego haces ventanas temporales
