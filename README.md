@@ -12,6 +12,8 @@ y **features de red (grafos)**.
   - Agregados históricos por cuenta (volumen, frecuencia, montos).
   - Métricas de red (in/out degree) sobre el grafo de transacciones.
 - Exponer los resultados en un dashboard interactivo con Streamlit para analistas AML.
+## Data set
+link: https://www.kaggle.com/datasets/anshankul/ibm-amlsim-example-dataset
 
 ## Estructura del proyecto
 
@@ -33,3 +35,4 @@ aml_aml_unsupervised/
 ├─ config.yaml
 ├─ requirements.txt
 └─ README.md
+
